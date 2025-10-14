@@ -65,7 +65,7 @@ input_data = pd.concat([input_data.drop('Geography', axis = 1), geo_encoded_df],
 
 input_scaled = scaler.transform(input_data)
 
-prediction = model.predict(input_data_scaled)
+prediction = model.predict(input_scaled)
 prediction_proba  = prediction[0][0]
 
 
