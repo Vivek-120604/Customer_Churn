@@ -63,7 +63,7 @@ geo_encoded_df = pd.DataFrame(geo_encoded, columns=onehot_encoder.get_feature_na
 input_data = pd.concat([input_data.drop('Geography', axis = 1), geo_encoded_df], axis =1)
 
 
-input_data_scaled = scaler.transform(input_data)
+input_scaled = scaler.transform(input_data)
 
 prediction = model.predict(input_data_scaled)
 prediction_proba  = prediction[0][0]
