@@ -26,7 +26,7 @@ st.title('Customer Churn Prediction App')
 
 #user input
 
-geography = st.selectbox('Geography', ['France',' Spain', 'Germany'])
+geography = st.selectbox('Geography', ['France','Spain', 'Germany'])
 gender = st.selectbox('Gender', label_encoder.classes_)
 age = st.slider('Age' , 18,92)
 balance = st.number_input('balance', min_value=0)
